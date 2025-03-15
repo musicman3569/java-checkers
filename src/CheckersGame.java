@@ -310,21 +310,8 @@ public class CheckersGame implements MouseListener
         // "Show Rules" button handler.
         btnShowRules.addActionListener(new ActionShowRules(this));
 
-        //
-        // Allows the user to forfeit the first move to the computer (so that
-        // the user doesn't have to go first all the time).
-        //
-        btnComputerFirst.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent evt)
-            {
-                changeStatus("Computer moving first. Please wait . . .");
-                doEnemyMove();
-                btnComputerFirst.setVisible(false);
-                rootPanel.paintImmediately(0, 0, 600, 600);
-                changeStatus("Select a piece to move.");
-            }
-        });
+        // "Let Computer Move First" button handler.
+        btnComputerFirst.addActionListener(new ActionComputerFirst(this));
     }
 
     /**

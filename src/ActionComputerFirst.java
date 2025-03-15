@@ -4,8 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * "Highlight Moves ON/OFF" button handler.  Toggles whether legal moves
- * and move locations are automatically highlighted on screen.
+ * "Let Computer Move First" button handler.  Allows the user to forfeit
+ * the first move to the computer (so that the user doesn't have to go
+ * first all the time).
  */
 public class ActionComputerFirst implements ActionListener {
     /**
@@ -23,22 +24,18 @@ public class ActionComputerFirst implements ActionListener {
     }
 
     /**
-     * Main action handler that processes the button event. Changes
-     * the button text to match the new state and updates
-     * the game root panel.
+     * Main action handler that processes the button event. Skips the waiting
+     * for the user's first move, preforms the Computer's move, and then
+     * returns to waiting for the player.
      *
      * @param evt the event to be processed
      */
     public void actionPerformed(ActionEvent evt)
     {
-        game.showHighlight = !game.showHighlight;
-
-        if (game.showHighlight) {
-            game.btnShowHighlight.setText("Highlight Moves ON ");
-        } else {
-            game.btnShowHighlight.setText("Highlight Moves OFF");
-        }
-
+        game.changeStatus("Computer moving first. Please wait . . .");
+        game.doEnemyMove();
+        game.btnComputerFirst.setVisible(false);
         game.rootPanel.paintImmediately(0, 0, 600, 600);
+        game.changeStatus("Select a piece to move.");
     }
 }
