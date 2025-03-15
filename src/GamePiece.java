@@ -1,3 +1,5 @@
+package JavaCheckers;
+
 /**
  * Game piece is used to store pixel coordinates and piece image type for
  * a checkers game piece.

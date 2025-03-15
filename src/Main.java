@@ -1,4 +1,5 @@
-import javax.swing.*;
+package JavaCheckers;
+
 import java.io.IOException;
 
 public class Main {

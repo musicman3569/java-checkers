@@ -1,3 +1,5 @@
+package JavaCheckers;
+
 /**
  * AIMoveTest is used by doRecursiveAI in class GameBoard to return move
  * results through the recursive calls.  The information includes locations

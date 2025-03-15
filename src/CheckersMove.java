@@ -1,3 +1,5 @@
+package JavaCheckers;
+
 /**
  * A CheckersMove contains row/col values for a piece being moved and it's
  * target row/col values.
