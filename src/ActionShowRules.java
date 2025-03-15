@@ -6,10 +6,10 @@ import java.awt.event.ActionListener;
 import java.util.Objects;
 
 /**
- * Displays the U.S. official Checkers rules (at least, all that are
- * applicable to a computer game) in a separate JFrame (window).
- * The help text is loaded from an HTML file in the /images folder
- * to a JScrollPane.
+ * "Show Rules" button handler. Displays the U.S. official Checkers
+ * rules (at least, all that are applicable to a computer game) in
+ * a separate JFrame (window). The help text is loaded from a text file
+ * in the /resources folder into a JScrollPane.
  */
 public class ActionShowRules implements ActionListener {
     /**

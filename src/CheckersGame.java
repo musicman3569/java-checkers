@@ -273,6 +273,13 @@ public class CheckersGame implements MouseListener
         img_board = getImage("board.png");
     }
 
+    /**
+     * Loads an image from the /resources folder into an Image instance
+     * and handles any errors.
+     *
+     * @param filename Name of the resource image file to load.
+     * @return File object containing the loaded image file data.
+     */
     private Image getImage(String filename) {
         File imageFile;
 
