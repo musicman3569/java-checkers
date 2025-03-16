@@ -16,6 +16,7 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.awt.event.*;
+import java.io.InputStream;
 
 /**
  * CheckersGame is a graphical animated checkers game swing applet.  A player
@@ -277,21 +278,16 @@ public class CheckersGame implements MouseListener
      * @return File object containing the loaded image file data.
      */
     private Image getImage(String filename) {
-        File imageFile;
-
-        try {
-            imageFile = new File(
-                getClass().getResource("/" + filename).getPath()
-            );
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-
+        InputStream inputStream = getClass().getResourceAsStream("/" + filename);
         Image image;
 
+        if (inputStream == null) {
+            throw new RuntimeException("Could not find resource " + filename + " due to null stream result from getResourceAsStream()");
+        }
+
         try {
-            image = ImageIO.read(imageFile);
-        } catch (IOException e) {
+            image = ImageIO.read(inputStream);
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
 

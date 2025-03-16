@@ -14,7 +14,7 @@ public class AIMoveTest
    /**
     * Board locations of the piece to be moved and it's target location
     */
-   CheckersMove move;
+   JavaCheckers.CheckersMove move;
    
    /**
     * Best board score found from branching move tests
@@ -28,7 +28,7 @@ public class AIMoveTest
     */
    AIMoveTest(boolean isEnemy)
    {
-      move = new CheckersMove(0, 0, 0, 0);
+      move = new JavaCheckers.CheckersMove(0, 0, 0, 0);
       setDefaultScore(isEnemy);
    }
 
@@ -61,7 +61,7 @@ public class AIMoveTest
     * @param newMove new move instance with the piece's source/target locations
     * @param newScore new board score resulting from the given move
     */
-   public void setAll(CheckersMove newMove, double newScore)
+   public void setAll(JavaCheckers.CheckersMove newMove, double newScore)
    {
       move.fromRow = newMove.fromRow;
       move.fromCol = newMove.fromCol;

@@ -1,7 +1,7 @@
 # Java Checkers 2.0
 *Written by Jason Hamilton, 2/12/2009*
 
-![Screenshot: Gameplay](/resources/screenshot2-gameplay.png)
+![Screenshot: Gameplay](/src/main/resources/screenshot2-gameplay.png)
 
 This was originally written in Java 6 as a college Computer Science 
 project, where students were to make a personal project of their choosing 
@@ -15,7 +15,7 @@ a recursive Minimax algorithm with weighted outcomes to make its moves,
 with the difficulty being how many recursive iterations it is allowed
 to predict. 
 
-![Screenshot: Difficulty Selection](/resources/screenshot-difficulty.png)
+![Screenshot: Difficulty Selection](/src/main/resources/screenshot-difficulty.png)
 
 The final selected move is what the algorithm predicts to be the
 most optimal outcome for the computer opponent under the assumption that
@@ -29,7 +29,7 @@ enforcement also accounts for exceptions like forced jumps, double jumps
 (where after a move if multiple double-jump options are available the
 turn does not change to the other player), kings, etc.
 
-![Screenshot: Gameplay 2](/resources/screenshot-gameplay.png)
+![Screenshot: Gameplay 2](/src/main/resources/screenshot-gameplay.png)
 
 The graphics were all made in Gimp, and I have also included the original
 source Gimp files in the images folder.
