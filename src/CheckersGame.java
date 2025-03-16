@@ -305,16 +305,16 @@ public class CheckersGame implements MouseListener
     public void initializeButtons()
     {
         // "New Game" button handler.
-        btnNewGame.addActionListener(new ActionNewGame(this));
+        btnNewGame.addActionListener(new BtnActionNewGame(this));
 
         // "Highlight Moves ON/OFF" button handler.
-        btnShowHighlight.addActionListener(new ActionShowHighlight(this));
+        btnShowHighlight.addActionListener(new BtnActionShowHighlight(this));
 
         // "Show Rules" button handler.
-        btnShowRules.addActionListener(new ActionShowRules(this));
+        btnShowRules.addActionListener(new BtnActionShowRules(this));
 
         // "Let Computer Move First" button handler.
-        btnComputerFirst.addActionListener(new ActionComputerFirst(this));
+        btnComputerFirst.addActionListener(new BtnActionComputerFirst(this));
     }
 
     /**

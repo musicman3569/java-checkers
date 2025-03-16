@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
  * "Highlight Moves ON/OFF" button handler.  Toggles whether legal moves
  * and move locations are automatically highlighted on screen.
  */
-public class ActionShowHighlight implements ActionListener {
+public class BtnActionShowHighlight implements ActionListener {
     /**
      * CheckersGame instance from which the button action originated.
      */
@@ -18,7 +18,7 @@ public class ActionShowHighlight implements ActionListener {
      *
      * @param checkersGame CheckersGame instance from which the button action originated.
      */
-    ActionShowHighlight(CheckersGame checkersGame) {
+    BtnActionShowHighlight(CheckersGame checkersGame) {
         game = checkersGame;
     }
 

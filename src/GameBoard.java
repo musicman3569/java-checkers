@@ -117,23 +117,6 @@ public class GameBoard
     }
 
     /**
-     * Sets the piece type in the board[][] array at the given row/col.
-     * Should be one of the following constants:
-     *
-     * <pre>
-     * EMPTY, PLAYER, PLAYER_KING, ENEMY, ENEMY_KING
-     * <pre/>
-     *
-     * @param row row of the game square to change
-     * @param col col of the game sqaure to change
-     * @param pieceType type of game piece on the game square
-     */
-    public void setPieceAt(int row, int col, int pieceType)
-    {
-        board[row][col] = pieceType;
-    }
-
-    /**
      * Make the specified move.  It is assumed that move is non-null and that
      * the move it represents is legal.
      *
@@ -181,7 +164,7 @@ public class GameBoard
     }
 
     /**
-     * Return an array containing all the legal CheckersMoves for the specfied
+     * Return an array containing all the legal CheckersMoves for the specified
      * player on the current board.  If the player has no legal moves, null is
      * returned.  The value of player should be one of the constants PLAYER or
      * ENEMY; if not, null is returned.  If the returned value is non-null, it
@@ -305,8 +288,8 @@ public class GameBoard
     }
 
     /**
-     * Test all the square around a selected piece at (oldRow, oldCol) at the
-     * interval given by moveSize.  If moveSize is 1, it checks from moves one
+     * Test all the squares around a selected piece at (oldRow, oldCol) at the
+     * interval given by moveSize.  If moveSize is 1, it checks for moves one
      * square away; if moveSize is 2, it checks for jumps (2 squares away).
      * Legal moves are added to the vector passed in through "moves".
      *

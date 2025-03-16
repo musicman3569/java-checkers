@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
  * the first move to the computer (so that the user doesn't have to go
  * first all the time).
  */
-public class ActionComputerFirst implements ActionListener {
+public class BtnActionComputerFirst implements ActionListener {
     /**
      * CheckersGame instance from which the button action originated.
      */
@@ -19,7 +19,7 @@ public class ActionComputerFirst implements ActionListener {
      *
      * @param checkersGame CheckersGame instance from which the button action originated.
      */
-    ActionComputerFirst(CheckersGame checkersGame) {
+    BtnActionComputerFirst(CheckersGame checkersGame) {
         game = checkersGame;
     }
 

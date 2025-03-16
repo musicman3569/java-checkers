@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
  * to their starting positions. Also calls setGameSpeed to determine how
  * fast the computer is and adjust gameSpeed accordingly.
  */
-public class ActionNewGame implements ActionListener {
+public class BtnActionNewGame implements ActionListener {
     /**
      * CheckersGame instance from which the button action originated.
      */
@@ -21,7 +21,7 @@ public class ActionNewGame implements ActionListener {
      *
      * @param checkersGame CheckersGame instance from which the button action originated.
      */
-    ActionNewGame(CheckersGame checkersGame) {
+    BtnActionNewGame(CheckersGame checkersGame) {
         game = checkersGame;
     }
 

@@ -11,7 +11,7 @@ import java.util.Objects;
  * a separate JFrame (window). The help text is loaded from a text file
  * in the /resources folder into a JScrollPane.
  */
-public class ActionShowRules implements ActionListener {
+public class BtnActionShowRules implements ActionListener {
     /**
      * CheckersGame instance from which the button action originated.
      */
@@ -22,7 +22,7 @@ public class ActionShowRules implements ActionListener {
      *
      * @param checkersGame CheckersGame instance from which the button action originated.
      */
-    ActionShowRules(CheckersGame checkersGame) {
+    BtnActionShowRules(CheckersGame checkersGame) {
         game = checkersGame;
     }
 
