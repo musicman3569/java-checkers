@@ -46,6 +46,8 @@ public class BtnActionShowRules implements ActionListener {
 
         tp.setContentType("text/plain");
         tp.setText(getTextPaneContent());
+        tp.setCaretPosition(0); // Scroll back to top
+        tp.setEditable(false);
 
         jf.setVisible(true);
         game.rootPanel.paintImmediately(0, 0, 600, 600);
